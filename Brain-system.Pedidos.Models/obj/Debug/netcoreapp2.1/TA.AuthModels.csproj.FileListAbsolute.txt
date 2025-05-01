@@ -1,0 +1,9 @@
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\bin\Debug\netcoreapp2.1\TA.AuthModels.deps.json
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\bin\Debug\netcoreapp2.1\TA.AuthModels.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\bin\Debug\netcoreapp2.1\TA.AuthModels.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\obj\Debug\netcoreapp2.1\TA.AuthModels.csproj.CoreCompileInputs.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\obj\Debug\netcoreapp2.1\TA.AuthModels.AssemblyInfoInputs.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\obj\Debug\netcoreapp2.1\TA.AuthModels.AssemblyInfo.cs
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\obj\Debug\netcoreapp2.1\TA.AuthModels.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\obj\Debug\netcoreapp2.1\TA.AuthModels.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthModels\obj\Debug\netcoreapp2.1\TA.AuthModels.csprojAssemblyReference.cache

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Brain-system.Pedidos.API.props" />
+</Project>

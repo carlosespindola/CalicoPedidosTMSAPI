@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Brain-system.Pedidos.API</name>
+    </assembly>
+    <members>
+        <member name="M:TA.Auth.API.Auth.JwtFactory.ToUnixEpochDate(System.DateTime)">
+            <returns>Date converted to seconds since Unix epoch (Jan 1, 1970, midnight UTC).</returns>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.Issuer">
+            <summary>
+            4.1.1.  "iss" (Issuer) Claim - The "iss" (issuer) claim identifies the principal that issued the JWT.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.Subject">
+            <summary>
+            4.1.2.  "sub" (Subject) Claim - The "sub" (subject) claim identifies the principal that is the subject of the JWT.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.Audience">
+            <summary>
+            4.1.3.  "aud" (Audience) Claim - The "aud" (audience) claim identifies the recipients that the JWT is intended for.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.Expiration">
+            <summary>
+            4.1.4.  "exp" (Expiration Time) Claim - The "exp" (expiration time) claim identifies the expiration time on or after which the JWT MUST NOT be accepted for processing.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.NotBefore">
+            <summary>
+            4.1.5.  "nbf" (Not Before) Claim - The "nbf" (not before) claim identifies the time before which the JWT MUST NOT be accepted for processing.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.IssuedAt">
+            <summary>
+            4.1.6.  "iat" (Issued At) Claim - The "iat" (issued at) claim identifies the time at which the JWT was issued.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.ValidFor">
+            <summary>
+            Set the timespan the token will be valid for (default is 120 min)
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.RefreshTokenValidFor">
+            <summary>
+            Set the timespan the token will be valid for (default is 150 min)
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.JtiGenerator">
+            <summary>
+            "jti" (JWT ID) Claim (default ID is a GUID)
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.JwtIssuerOptions.SigningCredentials">
+            <summary>
+            The signing key to use when generating tokens.
+            </summary>
+        </member>
+        <member name="T:TA.Auth.API.Models.LoginModel">
+            <summary>
+            Parameters used for login.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.LoginModel.Cliente">
+            <summary>
+            Codigo de cliente.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.LoginModel.Usuario">
+            <summary>
+            Usuario API.
+            </summary>
+        </member>
+        <member name="P:TA.Auth.API.Models.LoginModel.Password">
+            <summary>
+            Usuario password
+            </summary>
+        </member>
+        <member name="M:BrainSystem.Auth.API.Controllers.AuthController.Post(TA.Auth.API.Models.LoginModel)">
+             <summary>
+             Log in and get token.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /auth/login
+            
+             </remarks>
+             <returns>A JWT token</returns>
+             <response code="200">Returns a JWT token</response>
+             <response code="400">Invalid username or password or the user account is not active<br/>OR<br/>Invalid company</response>
+        </member>
+        <member name="T:BrainSystem.Auth.API.SwaggerDefaultValues">
+            <summary>
+            Represents the Swagger/Swashbuckle operation filter used to document the implicit API version parameter.
+            </summary>
+            <remarks>This <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter"/> is only required due to bugs in the <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator"/>.
+            Once they are fixed and published, this class can be removed.</remarks>
+        </member>
+        <member name="M:BrainSystem.Auth.API.SwaggerDefaultValues.Apply(Swashbuckle.AspNetCore.Swagger.Operation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the filter to the specified operation using the given context.
+            </summary>
+            <param name="operation">The operation to apply the filter to.</param>
+            <param name="context">The current operation filter context.</param>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.Post(Brainsystem.Pedidos.Models.DTO.Pedido[])">
+             <summary>
+             Alta de pedidos
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Pedidos/Alta
+                 [
+                     {
+                 	            "emplazamiento": "001",
+                         	    "almacen": "206",
+                         	    "tipoPedido": "206",
+                         	    "categoriaPedido": "R",
+                         	    "sucursalPedido": "0073",
+                         	    "numeroPedido": "00002568",
+                         	    "fechaPedido": "2019-04-17", // Formato de fecha: yyyy-MM-dd
+                         	    "cliente": "0000000206",
+                         	    "subcliente": "B000424",
+                         	    "razonSocial": "MATTIACCI LAURA",
+                         	    "condicionIVA": "1",
+                         	    "cuit":"30123456789",
+                         	    "domicilio": "HAEDO 1962",
+                         	    "localidad": "CAPITAL FEDERAL",
+                         	    "provincia": "BUE",
+                         	    "codigoPostal": "1000",
+                         	    "email": "tanavalentina@hotmail.com",
+                         	    "telefonos": "1549382344//",
+                         	    "particiona": "N",
+                         	    "fechaEntrega": "2019-04-24", // Formato de fecha: yyyy-MM-dd
+                         	    "refA": "",
+                         	    "refB": "VALOR DECLARADO $460 ABONA WAM",
+                         	    "valorFactura": 8374.00,
+                         	    "valorContrareembolso": null,
+                         	    "pesoTotal": null,
+                         	    "centroDeCosto": "",
+                         	    "detalleProductos":
+                                 [
+                         		    {
+                 			            "linea": 1,
+                         			    "compania": "WAM",
+                         			    "producto": "00000CL78061053",
+                         			    "cantidad": 1,
+                         			    "loteUnico": "",
+                         			    "despachoParcial": "0",
+                         			    "estadoProducto": "",
+                         			    "lote": "",
+                         			    "serie": ""
+                                 },
+                 		        {
+                 			    	    "linea": 2,
+                 			    	    "compania": "WAM",
+                 			    	    "producto": "000SOPPE080200E",
+                 			    	    "cantidad": 2,
+                 			    	    "loteUnico": "",
+                 			    	    "despachoParcial": "0",
+                 			    	    "estadoProducto": "",
+                 			    	    "lote": "",
+                 			    	    "serie": ""
+                 			    }
+                 		   ]
+                 	}
+                 ]
+            
+             </remarks>
+             <param name="pedidos"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de el alta de cada pedido</response>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.Put(Brainsystem.Pedidos.Models.DTO.Pedido[])">
+             <summary>
+             Modifica pedidos existentes.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /api/Pedidos/Modificar
+                 [
+                     {
+                 	            "emplazamiento": "001",
+                         	    "almacen": "206",
+                         	    "tipoPedido": "206",
+                         	    "categoriaPedido": "R",
+                         	    "sucursalPedido": "0073",
+                         	    "numeroPedido": "00002568",
+                         	    "fechaPedido": "2019-04-17", // Formato de fecha: yyyy-MM-dd
+                         	    "cliente": "0000000206",
+                         	    "subcliente": "B000424",
+                         	    "razonSocial": "MATTIACCI LAURA",
+                         	    "condicionIVA": "1",
+                         	    "cuit":"30123456789",
+                         	    "domicilio": "HAEDO 1962",
+                         	    "localidad": "CAPITAL FEDERAL",
+                         	    "provincia": "BUE",
+                         	    "codigoPostal": "1000",
+                         	    "email": "tanavalentina@hotmail.com",
+                         	    "telefonos": "1549382344//",
+                         	    "particiona": "N",
+                         	    "fechaEntrega": "2019-04-24", // Formato de fecha: yyyy-MM-dd
+                         	    "refA": "",
+                         	    "refB": "VALOR DECLARADO $460 ABONA WAM",
+                         	    "valorFactura": 8374.00,
+                         	    "valorContrareembolso": null,
+                         	    "pesoTotal": null,
+                         	    "centroDeCosto": "",
+                         	    "detalleProductos":
+                                 [
+                         		    {
+                 			            "linea": 1,
+                         			    "compania": "WAM",
+                         			    "producto": "00000CL78061053",
+                         			    "cantidad": 1,
+                         			    "loteUnico": "",
+                         			    "despachoParcial": "0",
+                         			    "estadoProducto": "",
+                         			    "lote": "",
+                         			    "serie": ""
+                                 },
+                 		        {
+                 			    	    "linea": 2,
+                 			    	    "compania": "WAM",
+                 			    	    "producto": "000SOPPE080200E",
+                 			    	    "cantidad": 2,
+                 			    	    "loteUnico": "",
+                 			    	    "despachoParcial": "0",
+                 			    	    "estadoProducto": "",
+                 			    	    "lote": "",
+                 			    	    "serie": ""
+                 			    }
+                 		   ]
+                 	}
+                 ]
+            
+             </remarks>
+             <param name="pedido"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de el alta de cada pedido</response>         
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.Delete(Brainsystem.Pedidos.Models.DTO.IdentificadorPedido[])">
+             <summary>
+             Elimina pedidos.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /api/Pedidos/Eliminar
+                 [
+                     {
+                 	           "emplazamiento": "001",
+                         	    "almacen": "206",
+                         	    "tipoPedido": "206",
+                         	    "categoriaPedido": "R",
+                         	    "sucursalPedido": "0073",
+                         	    "numeroPedido": "00002568"
+                 	  }
+                 ]
+            
+             </remarks>
+             <param name="pedidos"></param>
+             <returns></returns>
+             <response code="200">Elimina los comprobantes</response>
+             <response code="400">Si hubo un error al intentar eliminar los comprobantes</response>            
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.GetRubros">
+             <summary>
+             Consulta de Rubros
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /api/Pedidos/ConsultaStock
+            
+             </remarks>
+             <returns></returns>
+             <response code="200">Retorna Los rubros y subrubros del cliente</response>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.GetEstadosComprobantes">
+             <summary>
+             Consulta de Estados de Comprobantes SAADIS
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /api/Pedidos/GetEstadosComprobantes
+            
+             </remarks>
+             <returns></returns>
+             <response code="200">Retorna Los rubros y subrubros del cliente</response>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.ConsultaStock(Brainsystem.Pedidos.Models.DTO.FiltroConsultaStock)">
+             <summary>
+             Consulta de Stock
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Pedidos/ConsultaStock
+            
+             </remarks>
+             <param name="filtroConsultaStock"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de la conslta de stock de productos del cliente</response>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.ConsultaKardex(Brainsystem.Pedidos.Models.DTO.FiltroConsultaKardex)">
+             <summary>
+             Consulta e Kardex
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Pedidos/ConsultaKardex
+             </remarks>
+             <param name="filtroConsultaKardex"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de la consulta de Kardex del cliente</response>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosController.ConsultaComprobantes(Brainsystem.Pedidos.Models.DTO.FiltroConsultaComprobantes,Microsoft.Extensions.Options.IOptions{Brainsystem.Pedidos.API.Models.ApplicationSettings})">
+             <summary>
+             Consulta de Comprobantes SAADIS
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Pedidos/ConsultaComprobantes
+                 {
+                   "centroEmisor": "",
+                   "nroComprobante": "",
+                   "letraComprobante": "",
+                   "codigoDestinatario": "",
+                   "destinatario": "",
+                   "localidad": "",
+                   "estadoComprobante": "",     // Puede indicar mas de un estado con los valores separados por coma ( , )
+                   "fechaConformeDesde": "",    // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo
+                   "fechaConformeHasta": "",    // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo
+                   "fechaEmisionCbteDesde": "", // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo
+                   "fechaEmisionCbteHasta": "", // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo
+                   "cbtesObservados": true      // Valores permitidos: false o true
+                 }
+            
+             </remarks>
+             <param name="filtroConsultaCbtes"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de la consulta de comprobantes del cliente</response>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosSaadisController.Post(Brainsystem.Pedidos.Models.DTO.PedidoSaadis[])">
+             <summary>
+             Alta de pedidos en Saadis
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/PedidosSaadis/Alta
+                        [
+                          {
+                            "puntoDeVentaComprobante": "0001",
+                            "numeroComprobante": "1234",
+                            "letraComprobante": "A",
+                            "fechaComprobante": "2021-04-19T18:49:39.901Z",
+                            "numeroRemito": "",
+                            "bultos": 2,
+                            "kilosNetos": 3,
+                            "kilosAforados": 4,
+                            "metrosCubicos": 5,
+                            "nombreRemitente": "Juan",
+                            "localidadRemitente": "loc juan",
+                            "nombreDestinatario": "Pedro",
+                            "domicilioDestinatario": "calle pedro",
+                            "numeroCalleDestinatario": "987",
+                            "pisoDeptoDestinatario": "",
+                            "localidadDestinatario": "san antonio",
+                            "codigoPostalDestinatario": "9876",
+                            "valorDeclarado": 0,
+                            "importeContrareembolso": 0,
+                            "tipoIvaRemitente": "1",
+                            "cuitRemitente": "1234567890123",
+                            "numeroClienteDestino": "10",
+                            "observacionEnvio": "1er obsv",
+                            "cantidadPallets": 1,
+                            "cantidadUnidades": 1,
+                            "fechaPosibleEntrega": null,
+                            "observacionEnvio_2": "2da obsv",
+                            "tipoIvasDestino": "2",
+                            "cuitDestino": "23127137099",
+                            "observacionAdicionalEnvio": "sarasa"
+                          },
+                          {
+                            "puntoDeVentaComprobante": "0001",
+                            "numeroComprobante": "1235",
+                            "letraComprobante": "A",
+                            "fechaComprobante": "2021-04-19T18:49:39.901Z",
+                            "numeroRemito": "",
+                            "bultos": 2,
+                            "kilosNetos": 3,
+                            "kilosAforados": 4,
+                            "metrosCubicos": 5,
+                            "nombreRemitente": "Juan",
+                            "localidadRemitente": "loc juan",
+                            "nombreDestinatario": "Pedro",
+                            "domicilioDestinatario": "calle pedro",
+                            "numeroCalleDestinatario": "987",
+                            "pisoDeptoDestinatario": "",
+                            "localidadDestinatario": "san antonio",
+                            "codigoPostalDestinatario": "9876",
+                            "valorDeclarado": 0,
+                            "importeContrareembolso": 0,
+                            "tipoIvaRemitente": "1",
+                            "cuitRemitente": "1234567890123",
+                            "numeroClienteDestino": "10",
+                            "observacionEnvio": "1er obsv",
+                            "cantidadPallets": 1,
+                            "cantidadUnidades": 1,
+                            "fechaPosibleEntrega": null,
+                            "observacionEnvio_2": "2da obsv",
+                            "tipoIvasDestino": "2",
+                            "cuitDestino": "23127137099",
+                            "observacionAdicionalEnvio": "sarasa"
+                          }
+                        ]
+            
+             </remarks>
+             <param name="pedidos"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de el alta de cada pedido</response>
+        </member>
+        <member name="M:BrainSystem.Pedidos.API.Controllers.PedidosSaadisController.Delete(Brainsystem.Pedidos.Models.DTO.IdentificadorPedidoSaadis[])">
+             <summary>
+             Elimina pedidos en Saadis.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /api/PedidosSaadis/Eliminar
+                 [
+                   {
+                     "puntoDeVentaComprobante": "0001",
+                     "numeroComprobante": "1234",
+                     "letraComprobante": "A",
+                   }
+                 ]
+            
+             </remarks>
+             <param name="pedidos"></param>
+             <returns></returns>
+             <response code="200">Elimina los pedidos</response>
+             <response code="400">Si los pedidos no pudieron ser eliminados</response>            
+        </member>
+        <member name="M:Brainsystem.Pedidos.API.Controllers.PedidosWMSController.GetEstadosPedidosWMS">
+             <summary>
+             Consulta de Estados de Pedidos WMS
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /api/PedidosWMS/GetEstadosPedidosWMS
+            
+             </remarks>
+             <returns></returns>
+             <response code="200">Retorna estados posibles de los pedidos WMS</response>
+        </member>
+        <member name="M:Brainsystem.Pedidos.API.Controllers.PedidosWMSController.ConsultaCabeceraPedidosWMS(Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS)">
+             <summary>
+             Consulta de cabecera de Pedidos WMS
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Pedidos/ConsultaCabeceraPedidosWMS
+                 {
+                   "centroEmisor": "",
+                   "nroComprobante": "",
+                   "letraComprobante": "",
+                   "codigoDestinatario": "",
+                   "destinatario": "",
+                   "estadoComprobante": "",     // Puede indicar mas de un estado con los valores separados por coma ( , )
+                   "fechaEmisionCbteDesde": "", // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo
+                   "fechaEmisionCbteHasta": ""  // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo
+                 }
+            
+             </remarks>
+             <param name="filtroConsultaPedidosWMS"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de la consulta de cabeceras de pedidos WMS</response>
+        </member>
+        <member name="M:Brainsystem.Pedidos.API.Controllers.PedidosWMSController.ConsultaDetallePedidoWMS(Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS)">
+             <summary>
+             Consulta de detalle de Pedido WMS
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Pedidos/ConsultaDetallePedidoWMS
+                 {
+                   "centroEmisor": "",
+                   "nroComprobante": "",
+                   "letraComprobante": ""
+                 }
+            
+             </remarks>
+             <param name="filtroConsultaPedidoWMS"></param>
+             <returns></returns>
+             <response code="200">Retorna el resultado de la consulta de cabeceras de pedidos WMS</response>
+        </member>
+    </members>
+</doc>

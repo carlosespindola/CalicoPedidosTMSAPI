@@ -1,0 +1,12 @@
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.deps.json
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.dll
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.pdb
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.dll
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.pdb
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.csprojAssemblyReference.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.csproj.CoreCompileInputs.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.AssemblyInfoInputs.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.AssemblyInfo.cs
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.csproj.CopyComplete
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.dll
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.DataLayer\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.DataLayer.pdb

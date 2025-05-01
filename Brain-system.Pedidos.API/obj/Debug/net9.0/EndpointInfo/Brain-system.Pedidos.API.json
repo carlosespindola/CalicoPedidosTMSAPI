@@ -1,0 +1,1307 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Brain-system.Pedidos.API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/v1/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Log in and get token.",
+        "description": "Sample request:\r\n            \r\n    POST /auth/login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BrainSystem.Pedidos.API.Models.LoginModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BrainSystem.Pedidos.API.Models.LoginModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BrainSystem.Pedidos.API.Models.LoginModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Returns a JWT token"
+          },
+          "400": {
+            "description": "Invalid username or password or the user account is not active\r\nOR\r\nInvalid company"
+          }
+        }
+      }
+    },
+    "/api/v1/PedidosSaadis/Alta": {
+      "post": {
+        "tags": [
+          "PedidosSaadis"
+        ],
+        "summary": "Alta de pedidos en Saadis",
+        "description": "Sample request:\r\n            \r\n    POST /api/v1/PedidosSaadis/Alta\r\n           [\r\n             {\r\n               \"puntoDeVentaComprobante\": \"0001\",\r\n               \"numeroComprobante\": \"1234\",\r\n               \"letraComprobante\": \"A\",\r\n               \"fechaComprobante\": \"2021-04-19T18:49:39.901Z\",\r\n               \"numeroRemito\": \"\",\r\n               \"bultos\": 2,\r\n               \"kilosNetos\": 3,\r\n               \"kilosAforados\": 4,\r\n               \"metrosCubicos\": 5,\r\n               \"nombreRemitente\": \"Juan\",\r\n               \"localidadRemitente\": \"loc juan\",\r\n               \"nombreDestinatario\": \"Pedro\",\r\n               \"domicilioDestinatario\": \"calle pedro\",\r\n               \"numeroCalleDestinatario\": \"987\",\r\n               \"pisoDeptoDestinatario\": \"\",\r\n               \"localidadDestinatario\": \"san antonio\",\r\n               \"codigoPostalDestinatario\": \"9876\",\r\n               \"valorDeclarado\": 0,\r\n               \"importeContrareembolso\": 0,\r\n               \"tipoIvaRemitente\": \"1\",\r\n               \"cuitRemitente\": \"1234567890123\",\r\n               \"numeroClienteDestino\": \"10\",\r\n               \"observacionEnvio\": \"1er obsv\",\r\n               \"cantidadPallets\": 1,\r\n               \"cantidadUnidades\": 1,\r\n               \"fechaPosibleEntrega\": null,\r\n               \"observacionEnvio_2\": \"2da obsv\",\r\n               \"tipoIvasDestino\": \"2\",\r\n               \"cuitDestino\": \"23127137099\",\r\n               \"observacionAdicionalEnvio\": \"sarasa\"\r\n             },\r\n             {\r\n               \"puntoDeVentaComprobante\": \"0001\",\r\n               \"numeroComprobante\": \"1235\",\r\n               \"letraComprobante\": \"A\",\r\n               \"fechaComprobante\": \"2021-04-19T18:49:39.901Z\",\r\n               \"numeroRemito\": \"\",\r\n               \"bultos\": 2,\r\n               \"kilosNetos\": 3,\r\n               \"kilosAforados\": 4,\r\n               \"metrosCubicos\": 5,\r\n               \"nombreRemitente\": \"Juan\",\r\n               \"localidadRemitente\": \"loc juan\",\r\n               \"nombreDestinatario\": \"Pedro\",\r\n               \"domicilioDestinatario\": \"calle pedro\",\r\n               \"numeroCalleDestinatario\": \"987\",\r\n               \"pisoDeptoDestinatario\": \"\",\r\n               \"localidadDestinatario\": \"san antonio\",\r\n               \"codigoPostalDestinatario\": \"9876\",\r\n               \"valorDeclarado\": 0,\r\n               \"importeContrareembolso\": 0,\r\n               \"tipoIvaRemitente\": \"1\",\r\n               \"cuitRemitente\": \"1234567890123\",\r\n               \"numeroClienteDestino\": \"10\",\r\n               \"observacionEnvio\": \"1er obsv\",\r\n               \"cantidadPallets\": 1,\r\n               \"cantidadUnidades\": 1,\r\n               \"fechaPosibleEntrega\": null,\r\n               \"observacionEnvio_2\": \"2da obsv\",\r\n               \"tipoIvasDestino\": \"2\",\r\n               \"cuitDestino\": \"23127137099\",\r\n               \"observacionAdicionalEnvio\": \"sarasa\"\r\n             }\r\n           ]",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.PedidoSaadis"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.PedidoSaadis"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.PedidoSaadis"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de el alta de cada pedido"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosSaadis/Eliminar": {
+      "delete": {
+        "tags": [
+          "PedidosSaadis"
+        ],
+        "summary": "Elimina pedidos en Saadis.",
+        "description": "Sample request:\r\n            \r\n    DELETE /api/PedidosSaadis/Eliminar\r\n    [\r\n      {\r\n        \"puntoDeVentaComprobante\": \"0001\",\r\n        \"numeroComprobante\": \"1234\",\r\n        \"letraComprobante\": \"A\",\r\n      }\r\n    ]",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.IdentificadorPedidoSaadis"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.IdentificadorPedidoSaadis"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.IdentificadorPedidoSaadis"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Elimina los pedidos"
+          },
+          "400": {
+            "description": "Si los pedidos no pudieron ser eliminados"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosSaadis/ConsultaComprobantes": {
+      "post": {
+        "tags": [
+          "PedidosSaadis"
+        ],
+        "summary": "Consulta de Comprobantes SAADIS",
+        "description": "Sample request:\r\n            \r\n    POST /api/PedidosSaadis/ConsultaComprobantes\r\n    {\r\n      \"centroEmisor\": \"\",\r\n      \"nroComprobante\": \"\",\r\n      \"letraComprobante\": \"\",\r\n      \"codigoDestinatario\": \"\",\r\n      \"destinatario\": \"\",\r\n      \"localidad\": \"\",\r\n      \"estadoComprobante\": \"\",     // Puede indicar mas de un estado con los valores separados por coma ( , )\r\n      \"fechaConformeDesde\": \"\",    // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n      \"fechaConformeHasta\": \"\",    // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n      \"fechaEmisionCbteDesde\": \"\", // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n      \"fechaEmisionCbteHasta\": \"\", // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n      \"cbtesObservados\": true      // Valores permitidos: false o true\r\n    }",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaComprobantes"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaComprobantes"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaComprobantes"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de la consulta de comprobantes del cliente"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/Alta": {
+      "post": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Alta de pedidos",
+        "description": "Sample request:\r\n            \r\n    POST /api/Pedidos/Alta\r\n    [\r\n        {\r\n    \t            \"emplazamiento\": \"001\",\r\n            \t    \"almacen\": \"206\",\r\n            \t    \"tipoPedido\": \"206\",\r\n            \t    \"categoriaPedido\": \"R\",\r\n            \t    \"sucursalPedido\": \"0073\",\r\n            \t    \"numeroPedido\": \"00002568\",\r\n            \t    \"fechaPedido\": \"2019-04-17\", // Formato de fecha: yyyy-MM-dd\r\n            \t    \"cliente\": \"0000000206\",\r\n            \t    \"subcliente\": \"B000424\",\r\n            \t    \"razonSocial\": \"MATTIACCI LAURA\",\r\n            \t    \"condicionIVA\": \"1\",\r\n            \t    \"cuit\":\"30123456789\",\r\n            \t    \"domicilio\": \"HAEDO 1962\",\r\n            \t    \"localidad\": \"CAPITAL FEDERAL\",\r\n            \t    \"provincia\": \"BUE\",\r\n            \t    \"codigoPostal\": \"1000\",\r\n            \t    \"email\": \"tanavalentina@hotmail.com\",\r\n            \t    \"telefonos\": \"1549382344//\",\r\n            \t    \"particiona\": \"N\",\r\n            \t    \"fechaEntrega\": \"2019-04-24\", // Formato de fecha: yyyy-MM-dd\r\n            \t    \"refA\": \"\",\r\n            \t    \"refB\": \"VALOR DECLARADO $460 ABONA WAM\",\r\n            \t    \"valorFactura\": 8374.00,\r\n            \t    \"valorContrareembolso\": null,\r\n            \t    \"pesoTotal\": null,\r\n            \t    \"centroDeCosto\": \"\",\r\n            \t    \"detalleProductos\":\r\n                    [\r\n            \t\t    {\r\n    \t\t\t            \"linea\": 1,\r\n            \t\t\t    \"compania\": \"WAM\",\r\n            \t\t\t    \"producto\": \"00000CL78061053\",\r\n            \t\t\t    \"cantidad\": 1,\r\n            \t\t\t    \"loteUnico\": \"\",\r\n            \t\t\t    \"despachoParcial\": \"0\",\r\n            \t\t\t    \"estadoProducto\": \"\",\r\n            \t\t\t    \"lote\": \"\",\r\n            \t\t\t    \"serie\": \"\"\r\n                    },\r\n    \t\t        {\r\n    \t\t\t    \t    \"linea\": 2,\r\n    \t\t\t    \t    \"compania\": \"WAM\",\r\n    \t\t\t    \t    \"producto\": \"000SOPPE080200E\",\r\n    \t\t\t    \t    \"cantidad\": 2,\r\n    \t\t\t    \t    \"loteUnico\": \"\",\r\n    \t\t\t    \t    \"despachoParcial\": \"0\",\r\n    \t\t\t    \t    \"estadoProducto\": \"\",\r\n    \t\t\t    \t    \"lote\": \"\",\r\n    \t\t\t    \t    \"serie\": \"\"\r\n    \t\t\t    }\r\n    \t\t   ]\r\n    \t}\r\n    ]",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.Pedido"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.Pedido"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.Pedido"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de el alta de cada pedido"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/Modificar": {
+      "put": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Modifica pedidos existentes.",
+        "description": "Sample request:\r\n            \r\n    PUT /api/Pedidos/Modificar\r\n    [\r\n        {\r\n    \t            \"emplazamiento\": \"001\",\r\n            \t    \"almacen\": \"206\",\r\n            \t    \"tipoPedido\": \"206\",\r\n            \t    \"categoriaPedido\": \"R\",\r\n            \t    \"sucursalPedido\": \"0073\",\r\n            \t    \"numeroPedido\": \"00002568\",\r\n            \t    \"fechaPedido\": \"2019-04-17\", // Formato de fecha: yyyy-MM-dd\r\n            \t    \"cliente\": \"0000000206\",\r\n            \t    \"subcliente\": \"B000424\",\r\n            \t    \"razonSocial\": \"MATTIACCI LAURA\",\r\n            \t    \"condicionIVA\": \"1\",\r\n            \t    \"cuit\":\"30123456789\",\r\n            \t    \"domicilio\": \"HAEDO 1962\",\r\n            \t    \"localidad\": \"CAPITAL FEDERAL\",\r\n            \t    \"provincia\": \"BUE\",\r\n            \t    \"codigoPostal\": \"1000\",\r\n            \t    \"email\": \"tanavalentina@hotmail.com\",\r\n            \t    \"telefonos\": \"1549382344//\",\r\n            \t    \"particiona\": \"N\",\r\n            \t    \"fechaEntrega\": \"2019-04-24\", // Formato de fecha: yyyy-MM-dd\r\n            \t    \"refA\": \"\",\r\n            \t    \"refB\": \"VALOR DECLARADO $460 ABONA WAM\",\r\n            \t    \"valorFactura\": 8374.00,\r\n            \t    \"valorContrareembolso\": null,\r\n            \t    \"pesoTotal\": null,\r\n            \t    \"centroDeCosto\": \"\",\r\n            \t    \"detalleProductos\":\r\n                    [\r\n            \t\t    {\r\n    \t\t\t            \"linea\": 1,\r\n            \t\t\t    \"compania\": \"WAM\",\r\n            \t\t\t    \"producto\": \"00000CL78061053\",\r\n            \t\t\t    \"cantidad\": 1,\r\n            \t\t\t    \"loteUnico\": \"\",\r\n            \t\t\t    \"despachoParcial\": \"0\",\r\n            \t\t\t    \"estadoProducto\": \"\",\r\n            \t\t\t    \"lote\": \"\",\r\n            \t\t\t    \"serie\": \"\"\r\n                    },\r\n    \t\t        {\r\n    \t\t\t    \t    \"linea\": 2,\r\n    \t\t\t    \t    \"compania\": \"WAM\",\r\n    \t\t\t    \t    \"producto\": \"000SOPPE080200E\",\r\n    \t\t\t    \t    \"cantidad\": 2,\r\n    \t\t\t    \t    \"loteUnico\": \"\",\r\n    \t\t\t    \t    \"despachoParcial\": \"0\",\r\n    \t\t\t    \t    \"estadoProducto\": \"\",\r\n    \t\t\t    \t    \"lote\": \"\",\r\n    \t\t\t    \t    \"serie\": \"\"\r\n    \t\t\t    }\r\n    \t\t   ]\r\n    \t}\r\n    ]",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.Pedido"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.Pedido"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.Pedido"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de el alta de cada pedido"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/Eliminar": {
+      "delete": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Elimina pedidos.",
+        "description": "Sample request:\r\n            \r\n    DELETE /api/Pedidos/Eliminar\r\n    [\r\n        {\r\n    \t           \"emplazamiento\": \"001\",\r\n            \t    \"almacen\": \"206\",\r\n            \t    \"tipoPedido\": \"206\",\r\n            \t    \"categoriaPedido\": \"R\",\r\n            \t    \"sucursalPedido\": \"0073\",\r\n            \t    \"numeroPedido\": \"00002568\"\r\n    \t  }\r\n    ]",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.IdentificadorPedido"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.IdentificadorPedido"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.IdentificadorPedido"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Elimina los comprobantes"
+          },
+          "400": {
+            "description": "Si hubo un error al intentar eliminar los comprobantes"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/GetRubros": {
+      "get": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Consulta de Rubros",
+        "description": "Sample request:\r\n            \r\n    GET /api/Pedidos/ConsultaStock",
+        "responses": {
+          "200": {
+            "description": "Retorna Los rubros y subrubros del cliente"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/GetEstadosComprobantes": {
+      "get": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Consulta de Estados de Comprobantes SAADIS",
+        "description": "Sample request:\r\n            \r\n    GET /api/Pedidos/GetEstadosComprobantes",
+        "responses": {
+          "200": {
+            "description": "Retorna Los rubros y subrubros del cliente"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/ConsultaStock": {
+      "post": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Consulta de Stock",
+        "description": "Sample request:\r\n            \r\n    POST /api/Pedidos/ConsultaStock",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaStock"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaStock"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaStock"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de la conslta de stock de productos del cliente"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/ConsultaKardex": {
+      "post": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Consulta e Kardex",
+        "description": "Sample request:\r\n            \r\n    POST /api/Pedidos/ConsultaKardex",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaKardex"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaKardex"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaKardex"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de la consulta de Kardex del cliente"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/GetEstadosPedidosWMS": {
+      "get": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Consulta de Estados de Pedidos WMS",
+        "description": "Sample request:\r\n            \r\n    GET /api/PedidosWMS/GetEstadosPedidosWMS",
+        "responses": {
+          "200": {
+            "description": "Retorna estados posibles de los pedidos WMS"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/ConsultaCabeceraPedidosWMS": {
+      "post": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Consulta de cabecera de Pedidos WMS",
+        "description": "Sample request:\r\n            \r\n    POST /api/Pedidos/ConsultaCabeceraPedidosWMS\r\n    {\r\n      \"centroEmisor\": \"\",\r\n      \"nroComprobante\": \"\",\r\n      \"letraComprobante\": \"\",\r\n      \"codigoDestinatario\": \"\",\r\n      \"destinatario\": \"\",\r\n      \"estadoComprobante\": \"\",     // Puede indicar mas de un estado con los valores separados por coma ( , )\r\n      \"fechaEmisionCbteDesde\": \"\", // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n      \"fechaEmisionCbteHasta\": \"\"  // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n    }",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de la consulta de cabeceras de pedidos WMS"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS/ConsultaDetallePedidoWMS": {
+      "post": {
+        "tags": [
+          "PedidosWMS"
+        ],
+        "summary": "Consulta de detalle de Pedido WMS",
+        "description": "Sample request:\r\n            \r\n    POST /api/Pedidos/ConsultaDetallePedidoWMS\r\n    {\r\n      \"centroEmisor\": \"\",\r\n      \"nroComprobante\": \"\",\r\n      \"letraComprobante\": \"\"\r\n    }",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de la consulta de cabeceras de pedidos WMS"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS_Old/GetEstadosPedidosWMS": {
+      "get": {
+        "tags": [
+          "PedidosWMS_Old"
+        ],
+        "summary": "Consulta de Estados de Pedidos WMS",
+        "description": "Sample request:\r\n            \r\n    GET /api/PedidosWMS/GetEstadosPedidosWMS",
+        "responses": {
+          "200": {
+            "description": "Retorna estados posibles de los pedidos WMS"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS_Old/ConsultaCabeceraPedidosWMS": {
+      "post": {
+        "tags": [
+          "PedidosWMS_Old"
+        ],
+        "summary": "Consulta de cabecera de Pedidos WMS",
+        "description": "Sample request:\r\n            \r\n    POST /api/Pedidos/ConsultaCabeceraPedidosWMS\r\n    {\r\n      \"centroEmisor\": \"\",\r\n      \"nroComprobante\": \"\",\r\n      \"letraComprobante\": \"\",\r\n      \"codigoDestinatario\": \"\",\r\n      \"destinatario\": \"\",\r\n      \"estadoComprobante\": \"\",     // Puede indicar mas de un estado con los valores separados por coma ( , )\r\n      \"fechaEmisionCbteDesde\": \"\", // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n      \"fechaEmisionCbteHasta\": \"\"  // Formato de fecha: yyyy-MM-dd o null para no definir valor en este campo\r\n    }",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de la consulta de cabeceras de pedidos WMS"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/v1/PedidosWMS_Old/ConsultaDetallePedidoWMS": {
+      "post": {
+        "tags": [
+          "PedidosWMS_Old"
+        ],
+        "summary": "Consulta de detalle de Pedido WMS",
+        "description": "Sample request:\r\n            \r\n    POST /api/Pedidos/ConsultaDetallePedidoWMS\r\n    {\r\n      \"centroEmisor\": \"\",\r\n      \"nroComprobante\": \"\",\r\n      \"letraComprobante\": \"\"\r\n    }",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Retorna el resultado de la consulta de cabeceras de pedidos WMS"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BrainSystem.Pedidos.API.Models.LoginModel": {
+        "type": "object",
+        "properties": {
+          "cliente": {
+            "type": "string",
+            "description": "Codigo de cliente.",
+            "nullable": true
+          },
+          "usuario": {
+            "type": "string",
+            "description": "Usuario API.",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "description": "Usuario password",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Parameters used for login."
+      },
+      "Brainsystem.Pedidos.Models.DTO.FiltroConsultaComprobantes": {
+        "type": "object",
+        "properties": {
+          "centroEmisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "nroComprobante": {
+            "type": "string",
+            "nullable": true
+          },
+          "letraComprobante": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoDestinatario": {
+            "type": "string",
+            "nullable": true
+          },
+          "destinatario": {
+            "type": "string",
+            "nullable": true
+          },
+          "localidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoComprobante": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaConformeDesde": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaConformeHasta": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaEmisionCbteDesde": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaEmisionCbteHasta": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "cbtesObservados": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.FiltroConsultaDetallePedidoWMS": {
+        "type": "object",
+        "properties": {
+          "centroEmisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "nroComprobante": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "letraComprobante": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.FiltroConsultaKardex": {
+        "type": "object",
+        "properties": {
+          "codigoProducto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.FiltroConsultaPedidosWMS": {
+        "type": "object",
+        "properties": {
+          "centroEmisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "nroComprobante": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "letraComprobante": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoDestinatario": {
+            "type": "string",
+            "nullable": true
+          },
+          "destinatario": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoComprobante": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaEmisionCbteDesde": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaEmisionCbteHasta": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.FiltroConsultaStock": {
+        "type": "object",
+        "properties": {
+          "codigoProducto": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoRubro": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoSubrubro": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.IdentificadorPedido": {
+        "type": "object",
+        "properties": {
+          "emplazamiento": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "almacen": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "tipoPedido": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "categoriaPedido": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "sucursalPedido": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "numeroPedido": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.IdentificadorPedidoSaadis": {
+        "type": "object",
+        "properties": {
+          "puntoDeVentaComprobante": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "numeroComprobante": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "letraComprobante": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.Pedido": {
+        "required": [
+          "fechaPedido"
+        ],
+        "type": "object",
+        "properties": {
+          "emplazamiento": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "almacen": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "tipoPedido": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "categoriaPedido": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "sucursalPedido": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "numeroPedido": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "fechaPedido": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cliente": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "subcliente": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "condicionIVA": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cuit": {
+            "maxLength": 11,
+            "type": "string",
+            "nullable": true
+          },
+          "razonSocial": {
+            "maxLength": 60,
+            "type": "string",
+            "nullable": true
+          },
+          "domicilio": {
+            "maxLength": 250,
+            "type": "string",
+            "nullable": true
+          },
+          "localidad": {
+            "maxLength": 40,
+            "type": "string",
+            "nullable": true
+          },
+          "provincia": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "codigoPostal": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "telefonos": {
+            "maxLength": 25,
+            "type": "string",
+            "nullable": true
+          },
+          "particiona": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "fechaEntrega": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "refA": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "refB": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "valorFactura": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorContrareembolso": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pesoTotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "centroDeCosto": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "detalleProductos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Brainsystem.Pedidos.Models.DTO.PedidoItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.PedidoItem": {
+        "type": "object",
+        "properties": {
+          "linea": {
+            "type": "number",
+            "format": "double"
+          },
+          "compania": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "producto": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "cantidad": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "loteUnico": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "despachoParcial": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "estadoProducto": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "lote": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "serie": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Brainsystem.Pedidos.Models.DTO.PedidoSaadis": {
+        "required": [
+          "fechaComprobante"
+        ],
+        "type": "object",
+        "properties": {
+          "puntoDeVentaComprobante": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "numeroComprobante": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "letraComprobante": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "fechaComprobante": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "numeroRemito": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "bultos": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "kilosNetos": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "kilosAforados": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "metrosCubicos": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "nombreRemitente": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "localidadRemitente": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "nombreDestinatario": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "domicilioDestinatario": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "numeroCalleDestinatario": {
+            "maxLength": 5,
+            "type": "string",
+            "nullable": true
+          },
+          "pisoDeptoDestinatario": {
+            "maxLength": 5,
+            "type": "string",
+            "nullable": true
+          },
+          "localidadDestinatario": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "codigoPostalDestinatario": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "valorDeclarado": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "importeContrareembolso": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tipoIvaRemitente": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "cuitRemitente": {
+            "maxLength": 13,
+            "type": "string",
+            "nullable": true
+          },
+          "numeroClienteDestino": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "observacionEnvio": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "cantidadPallets": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cantidadUnidades": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fechaPosibleEntrega": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "observacionEnvio_2": {
+            "maxLength": 33,
+            "type": "string",
+            "nullable": true
+          },
+          "tipoIvasDestino": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "cuitDestino": {
+            "maxLength": 13,
+            "type": "string",
+            "nullable": true
+          },
+          "observacionAdicionalEnvio": {
+            "maxLength": 60,
+            "type": "string",
+            "nullable": true
+          },
+          "cbtsucori": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "maxLength": 70,
+            "type": "string",
+            "nullable": true
+          },
+          "campoAdicional1": {
+            "maxLength": 80,
+            "type": "string",
+            "nullable": true
+          },
+          "campoAdicional2": {
+            "maxLength": 80,
+            "type": "string",
+            "nullable": true
+          },
+          "campoAdicional3": {
+            "maxLength": 80,
+            "type": "string",
+            "nullable": true
+          },
+          "campoAdicional4": {
+            "maxLength": 80,
+            "type": "string",
+            "nullable": true
+          },
+          "campoAdicional5": {
+            "maxLength": 80,
+            "type": "string",
+            "nullable": true
+          },
+          "senasa": {
+            "maxLength": 1,
+            "type": "string",
+            "nullable": true
+          },
+          "tipoCarga": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "nombreDestinatarioAlternativo": {
+            "maxLength": 40,
+            "type": "string",
+            "nullable": true
+          },
+          "tipoIvasDestinoAlternativo": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "cuitDestinoAlternativo": {
+            "maxLength": 13,
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoDestinoAlternativo": {
+            "maxLength": 70,
+            "type": "string",
+            "nullable": true
+          },
+          "codigoVerificadorEntrega": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "datosEntrega": {
+            "maxLength": 2000,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme.",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  }
+}

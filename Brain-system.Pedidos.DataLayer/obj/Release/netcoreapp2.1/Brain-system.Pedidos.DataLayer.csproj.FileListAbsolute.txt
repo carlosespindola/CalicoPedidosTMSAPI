@@ -1,0 +1,13 @@
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\bin\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.deps.json
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\bin\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.dll
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\bin\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.pdb
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\bin\Release\netcoreapp2.1\Brain-system.Pedidos.Models.dll
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\bin\Release\netcoreapp2.1\Brain-system.Pedidos.Models.pdb
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.csproj.CoreCompileInputs.cache
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.AssemblyInfoInputs.cache
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.AssemblyInfo.cs
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.csproj.CopyComplete
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.dll
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.pdb
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.csproj.AssemblyReference.cache
+C:\Trabajo\brainsys\API para ABM de pedidos\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\obj\Release\netcoreapp2.1\Brain-system.Pedidos.DataLayer.GeneratedMSBuildEditorConfig.editorconfig

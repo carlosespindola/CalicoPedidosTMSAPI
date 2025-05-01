@@ -1,0 +1,12 @@
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\bin\Debug\net9.0\Brain-system.Pedidos.Models.deps.json
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\bin\Debug\net9.0\Brain-system.Pedidos.Models.dll
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\bin\Debug\net9.0\Brain-system.Pedidos.Models.pdb
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\Brain-system.Pedidos.Models.csproj.AssemblyReference.cache
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\Brain-system.Pedidos.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\Brain-system.Pedidos.Models.AssemblyInfoInputs.cache
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\Brain-system.Pedidos.Models.AssemblyInfo.cs
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\Brain-system.Pedidos.Models.csproj.CoreCompileInputs.cache
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\Brain-system.Pedidos.Models.dll
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\refint\Brain-system.Pedidos.Models.dll
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\Brain-system.Pedidos.Models.pdb
+C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.Models\obj\Debug\net9.0\ref\Brain-system.Pedidos.Models.dll

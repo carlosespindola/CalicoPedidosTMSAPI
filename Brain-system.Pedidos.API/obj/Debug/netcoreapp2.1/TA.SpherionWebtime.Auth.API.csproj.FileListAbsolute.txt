@@ -1,0 +1,44 @@
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.csprojAssemblyReference.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.csproj.CoreCompileInputs.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.RazorAssemblyInfo.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.RazorAssemblyInfo.cs
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.AssemblyInfoInputs.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.AssemblyInfo.cs
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\wwwroot\SwaggerExtensions\logo-TreeRing.png
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\wwwroot\SwaggerExtensions\TreeRingSwagger.css
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.deps.json
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.runtimeconfig.json
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.runtimeconfig.dev.json
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthDataLayer.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthModels.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthDataLayer.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthModels.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.RazorTargetAssemblyInfo.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.csproj.CopyComplete
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.xml
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\wwwroot\SwaggerExtensions\logo-TreeRing.png
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\wwwroot\SwaggerExtensions\TreeRingSwagger.css
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.deps.json
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.runtimeconfig.json
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.runtimeconfig.dev.json
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.dll
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.pdb
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.Auth.API.xml
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthDataLayer.dll
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthModels.dll
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthDataLayer.pdb
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\bin\Debug\netcoreapp2.1\netcoreapp2.1\TA.SpherionWebtime.AuthModels.pdb
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.csprojAssemblyReference.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.csproj.CoreCompileInputs.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.RazorAssemblyInfo.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.RazorAssemblyInfo.cs
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.AssemblyInfoInputs.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.AssemblyInfo.cs
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.RazorTargetAssemblyInfo.cache
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.csproj.CopyComplete
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.dll
+C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Auth.API\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Auth.API.pdb

@@ -1,0 +1,98 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Trabajo\\brainsys\\API para ABM de pedidos - Nuevo\\Brain-system.Pedidos.API.Projects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FEFA0BB-707A-475D-BAA5-8D81C13DACA5}|Brain-system.Pedidos.API\\Brain-system.Pedidos.API.csproj|c:\\trabajo\\brainsys\\api para abm de pedidos - nuevo\\brain-system.pedidos.api.projects\\brain-system.pedidos.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FEFA0BB-707A-475D-BAA5-8D81C13DACA5}|Brain-system.Pedidos.API\\Brain-system.Pedidos.API.csproj|solutionrelative:brain-system.pedidos.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FEFA0BB-707A-475D-BAA5-8D81C13DACA5}|Brain-system.Pedidos.API\\Brain-system.Pedidos.API.csproj|c:\\trabajo\\brainsys\\api para abm de pedidos - nuevo\\brain-system.pedidos.api.projects\\brain-system.pedidos.api\\controllers\\pedidossaadiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FEFA0BB-707A-475D-BAA5-8D81C13DACA5}|Brain-system.Pedidos.API\\Brain-system.Pedidos.API.csproj|solutionrelative:brain-system.pedidos.api\\controllers\\pedidossaadiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86ABC669-ABA7-4E9D-AA58-8F248A8CA89F}|Brain-system.Pedidos.DataLayer\\Brain-system.Pedidos.DataLayer.csproj|c:\\trabajo\\brainsys\\api para abm de pedidos - nuevo\\brain-system.pedidos.api.projects\\brain-system.pedidos.datalayer\\saadisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86ABC669-ABA7-4E9D-AA58-8F248A8CA89F}|Brain-system.Pedidos.DataLayer\\Brain-system.Pedidos.DataLayer.csproj|solutionrelative:brain-system.pedidos.datalayer\\saadisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SaadisDBContext.cs",
+              "DocumentMoniker": "C:\\Trabajo\\brainsys\\API para ABM de pedidos - Nuevo\\Brain-system.Pedidos.API.Projects\\Brain-system.Pedidos.DataLayer\\SaadisDBContext.cs",
+              "RelativeDocumentMoniker": "Brain-system.Pedidos.DataLayer\\SaadisDBContext.cs",
+              "ToolTip": "C:\\Trabajo\\brainsys\\API para ABM de pedidos - Nuevo\\Brain-system.Pedidos.API.Projects\\Brain-system.Pedidos.DataLayer\\SaadisDBContext.cs",
+              "RelativeToolTip": "Brain-system.Pedidos.DataLayer\\SaadisDBContext.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAgwAEBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T17:15:33.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Trabajo\\brainsys\\API para ABM de pedidos - Nuevo\\Brain-system.Pedidos.API.Projects\\Brain-system.Pedidos.API\\Startup.cs",
+              "RelativeDocumentMoniker": "Brain-system.Pedidos.API\\Startup.cs",
+              "ToolTip": "C:\\Trabajo\\brainsys\\API para ABM de pedidos - Nuevo\\Brain-system.Pedidos.API.Projects\\Brain-system.Pedidos.API\\Startup.cs",
+              "RelativeToolTip": "Brain-system.Pedidos.API\\Startup.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAhwL8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T18:11:48.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PedidosSaadisController.cs",
+              "DocumentMoniker": "C:\\Trabajo\\brainsys\\API para ABM de pedidos - Nuevo\\Brain-system.Pedidos.API.Projects\\Brain-system.Pedidos.API\\Controllers\\PedidosSaadisController.cs",
+              "RelativeDocumentMoniker": "Brain-system.Pedidos.API\\Controllers\\PedidosSaadisController.cs",
+              "ToolTip": "C:\\Trabajo\\brainsys\\API para ABM de pedidos - Nuevo\\Brain-system.Pedidos.API.Projects\\Brain-system.Pedidos.API\\Controllers\\PedidosSaadisController.cs",
+              "RelativeToolTip": "Brain-system.Pedidos.API\\Controllers\\PedidosSaadisController.cs",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAQwHcBAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T18:01:06.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

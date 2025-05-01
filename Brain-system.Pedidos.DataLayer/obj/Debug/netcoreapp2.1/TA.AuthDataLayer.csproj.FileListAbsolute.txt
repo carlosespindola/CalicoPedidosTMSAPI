@@ -1,0 +1,12 @@
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\bin\Debug\netcoreapp2.1\TA.AuthDataLayer.deps.json
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\bin\Debug\netcoreapp2.1\TA.AuthDataLayer.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\bin\Debug\netcoreapp2.1\TA.AuthDataLayer.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\bin\Debug\netcoreapp2.1\TA.AuthModels.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\bin\Debug\netcoreapp2.1\TA.AuthModels.pdb
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\obj\Debug\netcoreapp2.1\TA.AuthDataLayer.csprojAssemblyReference.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\obj\Debug\netcoreapp2.1\TA.AuthDataLayer.csproj.CoreCompileInputs.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\obj\Debug\netcoreapp2.1\TA.AuthDataLayer.AssemblyInfoInputs.cache
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\obj\Debug\netcoreapp2.1\TA.AuthDataLayer.AssemblyInfo.cs
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\obj\Debug\netcoreapp2.1\TA.AuthDataLayer.csproj.CopyComplete
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\obj\Debug\netcoreapp2.1\TA.AuthDataLayer.dll
+C:\Trabajo\TreeRing\TreeRing Time 9\TA.API.Projects\TA.AuthDataLayer\obj\Debug\netcoreapp2.1\TA.AuthDataLayer.pdb

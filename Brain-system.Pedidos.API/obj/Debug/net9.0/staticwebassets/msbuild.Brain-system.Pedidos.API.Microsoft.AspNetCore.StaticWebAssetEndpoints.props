@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Brain-system.Pedidos.API/SwaggerExtensions/BrainSystemSwagger.8hmahp0r7n.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SwaggerExtensions\BrainSystemSwagger.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8hmahp0r7n"},{"Name":"integrity","Value":"sha256-tPrGbNhdhPC7yg3kX5EFQb8XqIQ28avloYdoM6AB9Mk="},{"Name":"label","Value":"_content/Brain-system.Pedidos.API/SwaggerExtensions/BrainSystemSwagger.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"272"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tPrGbNhdhPC7yg3kX5EFQb8XqIQ28avloYdoM6AB9Mk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 15 May 2019 14:51:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Brain-system.Pedidos.API/SwaggerExtensions/BrainSystemSwagger.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SwaggerExtensions\BrainSystemSwagger.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tPrGbNhdhPC7yg3kX5EFQb8XqIQ28avloYdoM6AB9Mk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"272"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tPrGbNhdhPC7yg3kX5EFQb8XqIQ28avloYdoM6AB9Mk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 15 May 2019 14:51:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Brain-system.Pedidos.API/SwaggerExtensions/logo.foof4jai7v.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SwaggerExtensions\logo.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"foof4jai7v"},{"Name":"integrity","Value":"sha256-UQWqSFKT6a6ZUSQnrVw/3xd\u002BBweCUP4zDCPbygHsvRM="},{"Name":"label","Value":"_content/Brain-system.Pedidos.API/SwaggerExtensions/logo.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9788"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022UQWqSFKT6a6ZUSQnrVw/3xd\u002BBweCUP4zDCPbygHsvRM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 Apr 2021 18:31:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Brain-system.Pedidos.API/SwaggerExtensions/logo.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SwaggerExtensions\logo.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UQWqSFKT6a6ZUSQnrVw/3xd\u002BBweCUP4zDCPbygHsvRM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9788"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022UQWqSFKT6a6ZUSQnrVw/3xd\u002BBweCUP4zDCPbygHsvRM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 Apr 2021 18:31:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
