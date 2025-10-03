@@ -1,9 +1,0 @@
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.deps.json
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.dll
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\bin\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.pdb
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.csproj.CoreCompileInputs.cache
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.AssemblyInfoInputs.cache
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.AssemblyInfo.cs
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.dll
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.pdb
-C:\Trabajo\TreeRing\Spherion WebTime\TA.SpherionWebtime.API.Projects\TA.SpherionWebtime.Models\obj\Debug\netcoreapp2.1\TA.SpherionWebtime.Models.csprojAssemblyReference.cache

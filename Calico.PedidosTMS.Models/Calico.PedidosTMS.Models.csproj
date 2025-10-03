@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SAADIS\**" />
+    <EmbeddedResource Remove="SAADIS\**" />
+    <None Remove="SAADIS\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Company.cs" />
+    <Compile Remove="DALImportacionPedidos.cs" />
+    <Compile Remove="Dealer.cs" />
+    <Compile Remove="DTO\CabeceraPedidoWMS.cs" />
+    <Compile Remove="DTO\CompanyDTO.cs" />
+    <Compile Remove="DTO\Comprobante.cs" />
+    <Compile Remove="DTO\DealerDTO.cs" />
+    <Compile Remove="DTO\FiltroConsultaComprobantes.cs" />
+    <Compile Remove="DTO\FiltroConsultaKardex.cs" />
+    <Compile Remove="DTO\FiltroConsultaPedidosWMS.cs" />
+    <Compile Remove="DTO\FiltroConsultaStock.cs" />
+    <Compile Remove="DTO\IdentificadorPedido.cs" />
+    <Compile Remove="DTO\IdentificadorPedidoSaadis.cs" />
+    <Compile Remove="DTO\Kardex.cs" />
+    <Compile Remove="DTO\Pedido.cs" />
+    <Compile Remove="DTO\PedidoItem.cs" />
+    <Compile Remove="DTO\ResultadoDetallePedidoWMS.cs" />
+    <Compile Remove="DTO\ResultadoEliminacionPedido.cs" />
+    <Compile Remove="DTO\ResultadoPedido.cs" />
+    <Compile Remove="DTO\ResultadoValidacionPedido.cs" />
+    <Compile Remove="DTO\Rubro.cs" />
+    <Compile Remove="DTO\Stock.cs" />
+    <Compile Remove="ImportacionPedidosStandard.cs" />
+    <Compile Remove="IPedidosImportacion.cs" />
+    <Compile Remove="MPOPEDC.cs" />
+    <Compile Remove="MPOPEDD.cs" />
+    <Compile Remove="Pedido.cs" />
+    <Compile Remove="PedidoItem.cs" />
+    <Compile Remove="Role.cs" />
+    <Compile Remove="SUBCLIEN.cs" />
+    <Compile Remove="TMCABPED.cs" />
+    <Compile Remove="TMDETPED.cs" />
+    <Compile Remove="UserAccount.cs" />
+    <Compile Remove="UserRole.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,3 +1,0 @@
-C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.API\wwwroot\SwaggerExtensions\BrainSystemSwagger.css
-wwwroot\SwaggerExtensions\BrainSystemSwagger.css
-wwwroot\SwaggerExtensions\logo.png

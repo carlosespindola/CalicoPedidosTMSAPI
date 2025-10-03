@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = Brain-system.Pedidos.DataLayer
-build_property.ProjectDir = C:\Trabajo\brainsys\API para ABM de pedidos - Nuevo\Brain-system.Pedidos.API.Projects\Brain-system.Pedidos.DataLayer\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 
